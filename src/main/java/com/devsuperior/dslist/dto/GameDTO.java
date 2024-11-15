@@ -21,6 +21,7 @@ public class GameDTO {
     public GameDTO(Game entity) {
         BeanUtils.copyProperties(entity, this);
         // método atribui e associa. Exemplo no GameDTO
+        // necessário utilizar os getters e setters quando utiliza o BeanUtils
     }
 
     public Long getId() {
